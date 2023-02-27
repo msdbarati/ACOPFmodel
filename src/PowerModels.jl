@@ -1,6 +1,7 @@
 module PowerModels
 
 import LinearAlgebra, SparseArrays
+import PiecewiseLinearOpt: piecewiselinear
 
 import JSON
 import Memento
