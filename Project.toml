@@ -1,4 +1,4 @@
-name = "PowerModels"
+name = "ACOPFmodel"
 uuid = "c36e90e8-916a-50a6-bd94-075b64ef4655"
 authors = ["Carleton Coffrin"]
 repo = "https://github.com/lanl-ansi/PowerModels.jl"
