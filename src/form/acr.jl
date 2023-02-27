@@ -32,7 +32,7 @@ function constraint_voltage_magnitude_bounds(pm::AbstractACRModel, n::Int, i, vm
 
     #newely added for PLA
     m = JuMP.model()
-    JUMP.@variable(m, x)
+    JuMP.@variable(m, x)
     V_r = piecewiselinear(m, x, vmin:0.01:vmax, vr -> vr^2, method=:DLog)
     V_i = piecewiselinear(m, x, vmin:0.01:vmax, vi -> vi^2, method=:DLog)
     JuMP.@constraint(pm.model, vmin^2 <= (V_r + V_i))
