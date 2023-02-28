@@ -22,8 +22,7 @@ function variable_bus_voltage(pm::AbstractACRModel; nw::Int=nw_id_default, bound
         #end
     end
 end
-
-
+ 
 "`vmin <= vm[i] <= vmax`"
 function constraint_voltage_magnitude_bounds(pm::AbstractACRModel, n::Int, i, vmin, vmax)
     @assert vmin <= vmax
